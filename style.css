@@ -7,10 +7,14 @@
 ul {
     list-style: none;
 }
+li {
+    float:right;
+}
 li a {
     text-decoration: none;
     text-align: center;
     padding:1rem;
+    color:#E5E7EB;
 }
 .main-text {
     font-size: 48px;
@@ -26,6 +30,7 @@ li a {
 
 body {
     height: 100vh;
+    margin:0px;
     display: flex;
     flex-direction: column;
 }
@@ -34,6 +39,8 @@ body {
     background-color: #1F2937;
     display:flex;
     margin: 0px;
+    padding-top: 1rem;
+    padding-right:5rem;
    
 }
 
@@ -42,9 +49,11 @@ body {
     flex-direction:column;
     flex: 1 1 50%;
     align-items: baseline;
+    padding-left:10rem;
 }
 
 .header-logo{
+    
     font-size:24px;
     color: #F9FAF8;
 }
@@ -60,11 +69,13 @@ body {
 }
 
 .header-nav{
-    
+    justify-content: flex-end;
 }
 
-.header-img {
-
+.header-right img {
+    height:40rem;
+    width:auto;
+    padding: 3rem 0rem 3rem 2rem;
 }
 
 .info{
@@ -124,4 +135,43 @@ body {
     font-style:italic;
     font-weight: lighter;
     color:#1F2937
+}
+
+#footer {
+    color:white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1F2937;
+    text-align: center;
+}
+
+.call-to-action{
+background-color: #3882F6;
+color:white;
+border-radius: 2%;
+display:flex;
+max-width: 600px;
+justify-content: center;
+align-items: center;
+align-self: center;
+padding-left: 5rem;
+padding-right:5rem;
+margin: 8rem 6rem 8rem 6rem;
+}
+
+.call-to-action button {
+    color:white;
+    background-color: #3882F6;
+    padding:.5rem;
+    border:white solid 1px;
+    border-radius: 5%;
+    width: 7rem;
+    flex: 1 1 auto;
+}
+
+.header-body button {
+    color:white;
+    background-color: #3882F6;
+    padding: 5px 10px 5px 10px;
+    border:none;
 }
